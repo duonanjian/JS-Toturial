@@ -1,3 +1,3 @@
-# web-platform-4j74fw
+# JS-Toturial
 
 [Edit on StackBlitz ⚡️](https://stackblitz.com/edit/web-platform-4j74fw)
