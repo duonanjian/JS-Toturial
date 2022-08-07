@@ -33,4 +33,13 @@ content.ondrop = (e) => {
 content.ondragleave = () => {
   console.log('元素离开容器');
 };
+
+setInterval(() => {
+  const trafficList = document.querySelectorAll('.content .trafficlight');
+  trafficList.length >= 12 && (content.innerHTML = '');
+  let a = light.cloneNode();
+  a.innerHTML = light.innerHTML;
+  content.appendChild(a);
+}, 2000);
+
 export default 5;
