@@ -5,8 +5,18 @@
     <link rel="stylesheet" type="text/css" href="styles.css" />
   </head>
   <body>
-    <h1>JS</h1>
-    <input />
+    <div class="all-content">
+      <div class="left">
+        <h1>JS Toturial</h1>
+        <input />
+        <div draggable="true" class="trafficlight">红绿灯</div>
+        <div class="content">
+          <span class="content-description"> 容器 </span>
+        </div>
+      </div>
+      <div class="right"></div>
+    </div>
+
     <script type="text/javascript">
       'use strict';
       var foo = () => {
@@ -14,40 +24,13 @@
       };
       foo(); //Window
 
-      function changeme() {
-        console.log(123);
-      }
+      const input = document.getElementsByTagName('input')[0];
+      input.focus();
+      console.log(input);
+
+      input.onblur = () => {
+        console.log('input 失去焦点');
+      };
     </script>
-    <div draggable="true" class="trafficlight">红绿灯</div>
-    <div class="content">容器</div>
-    <div class="box">55555555555555555555555555555</div>
-
-    <h4>单元格跨两列:</h4>
-    <table border="1">
-      <tr>
-        <th>Name</th>
-        <th ondblclick="changeme()" colspan="2">Telephone</th>
-      </tr>
-      <tr>
-        <td>Bill Gates</td>
-        <td ondblclick="changeme()">555 77 854</td>
-        <td>555 77 855</td>
-      </tr>
-    </table>
-
-    <h4>单元格跨两行:</h4>
-    <table border="1">
-      <tr>
-        <th>First Name:</th>
-        <td>Bill Gates</td>
-      </tr>
-      <tr>
-        <th  rowspan="2">Telephone:</th>
-        <td>555 77 854</td>
-      </tr>
-      <tr>
-        <td>555 77 855</td>
-      </tr>
-    </table>
   </body>
 </html>

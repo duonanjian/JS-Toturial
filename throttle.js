@@ -2,7 +2,7 @@ const inputdom = document.getElementsByTagName('input')[0];
 
 function eventfun(val) {
   console.log([...val]);
-  // console.log(this);
+  console.log(this);
   console.log('这是一个普通事件函数', [...val]);
 }
 

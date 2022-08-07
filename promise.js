@@ -1,5 +1,6 @@
 const light = document.getElementsByClassName('trafficlight')[0];
-console.log(light);
+console.log(light, 'trafficlight');
+
 const sleep = (delay) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -7,11 +8,13 @@ const sleep = (delay) => {
     }, delay);
   });
 };
+
 const operation = async (color, delay) => {
   light.style.backgroundColor = color;
   const data = await sleep(delay);
   // console.log(data);
 };
+
 while (1) {
   const a = await operation('red', 1000);
   const b = await operation('yellow', 2000);
