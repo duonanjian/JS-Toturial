@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script type="module" src="index.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <h1>JS</h1>
+    <input />
+    <script type="text/javascript">
+      'use strict';
+      var foo = () => {
+        console.log(this);
+      };
+      foo(); //Window
+
+      function changeme() {
+        console.log(123);
+      }
+    </script>
+    <div draggable="true" class="trafficlight">红绿灯</div>
+    <div class="content">容器</div>
+    <div class="box">55555555555555555555555555555</div>
+
+    <h4>单元格跨两列:</h4>
+    <table border="1">
+      <tr>
+        <th>Name</th>
+        <th ondblclick="changeme()" colspan="2">Telephone</th>
+      </tr>
+      <tr>
+        <td>Bill Gates</td>
+        <td ondblclick="changeme()">555 77 854</td>
+        <td>555 77 855</td>
+      </tr>
+    </table>
+
+    <h4>单元格跨两行:</h4>
+    <table border="1">
+      <tr>
+        <th>First Name:</th>
+        <td>Bill Gates</td>
+      </tr>
+      <tr>
+        <th  rowspan="2">Telephone:</th>
+        <td>555 77 854</td>
+      </tr>
+      <tr>
+        <td>555 77 855</td>
+      </tr>
+    </table>
+  </body>
+</html>

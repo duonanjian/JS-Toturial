@@ -1,0 +1,23 @@
+.trafficlight{
+  width:100px;
+  height: 100px;
+  background-color: rgb(59, 117, 117);
+  border-radius: 50%;
+  /* text-align: center;
+  line-height: 100px; */
+}
+.content{
+  width: 200px;
+  height: 200px;
+  background-color: rgba(98, 236, 190, 0.925);
+  /* text-align: center;
+  line-height: 200px; */
+  /* letter-spacing: 10px; */
+  /* writing-mode:tb-rl; */
+}
+.box {
+  width: 100px;
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+  white-space: normal;
+}
