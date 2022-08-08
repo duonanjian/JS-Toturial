@@ -1,5 +1,5 @@
 const light = document.getElementsByClassName('trafficlight')[0];
-console.log(light, 'trafficlight');
+// console.log(light, 'trafficlight');
 
 const sleep = (delay) => {
   return new Promise((resolve, reject) => {

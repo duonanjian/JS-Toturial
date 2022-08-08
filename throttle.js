@@ -1,3 +1,5 @@
+// 节流的概念就是在设定的时间范围内有新的事件进来就直接不管，故他会执行第一次的事件
+
 const inputdom = document.getElementsByTagName('input')[0];
 
 function eventfun(val) {

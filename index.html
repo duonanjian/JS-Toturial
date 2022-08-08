@@ -20,13 +20,13 @@
     <script type="text/javascript">
       'use strict';
       var foo = () => {
-        console.log(this);
+        // console.log(this);
       };
       foo(); //Window
 
       const input = document.getElementsByTagName('input')[0];
       // input.focus();
-      console.log(input);
+      // console.log(input);
 
       input.onblur = () => {
         console.log('input 失去焦点');
