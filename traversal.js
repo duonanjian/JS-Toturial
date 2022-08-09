@@ -43,7 +43,8 @@ const obj = {
  * for in 也可以实现continue break
  */
 for (let key in obj) {
-  if(key === 'orange') continue
+  if (key === 'orange') continue;
   console.log(key);
 }
+
 export default '';

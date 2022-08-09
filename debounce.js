@@ -1,5 +1,6 @@
-// 防抖的概念就是在设定的时间范围内有新的事件进来就清空掉上次记录的事件,重新计时，故他会执行最后一次的事件
-
+/**
+ * 防抖的概念就是在设定的时间范围内有新的事件进来就清空掉上次记录的事件,重新计时，故他会执* 行最后一次的事件
+ */
 const inputdom = document.getElementsByTagName('input')[0];
 const log = console.log.bind(document);
 
